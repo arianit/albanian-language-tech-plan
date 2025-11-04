@@ -422,7 +422,13 @@ Compile:
 **Language Models:**
 - **Visar/roberta_oscar_al**: First Albanian RoBERTa attempt (convergence issues)
 - **edisnord/albert-base-v2-sq**: Small MLM model trained on CulturaX
+- **Kushtrim/Llama-3.1-8B-Instruct-bnb-4bit-shqip**: Instruction-tuned 8B parameter LLM for Albanian
 - **fastText word embeddings**: Multilingual word vectors including Albanian
+
+**Task-Specific Models:**
+- **Kushtrim/bert-base-multilingual-cased-finetuned-albanian-ner**: Named Entity Recognition model
+- **Kushtrim/bert-base-multilingual-cased-sq-sentiment-sst2**: Sentiment analysis for Albanian text
+- **Kushtrim/speecht5_finetuned_cv_sq**: Text-to-Speech model fine-tuned on Common Voice Albanian
 
 **Commercial Services:**
 - Google Translate: Full Albanian support (text, speech, camera)
@@ -433,8 +439,12 @@ Compile:
 **Best Performing Models:**
 - ASR: Whisper medium fine-tuned (~5% WER on Mozilla Common Voice test set)
 - Translation: Helsinki-NLP/opus-mt-en-sq (OPUS-based)
+- NER: Kushtrim/bert-base-multilingual-cased-finetuned-albanian-ner
+- Sentiment: Kushtrim/bert-base-multilingual-cased-sq-sentiment-sst2
+- TTS: Kushtrim/speecht5_finetuned_cv_sq
+- Instruction-following: Kushtrim/Llama-3.1-8B-Instruct-bnb-4bit-shqip
 
-**Assessment:** Foundational tools exist but lack production quality, comprehensive benchmarking, and integration. Need for standardized evaluation datasets and systematic model comparison. **Albanian is not yet supported as a first-class language in mainstream NLP libraries like NLTK and spaCy.**
+**Assessment:** Foundational tools exist including recent contributions from researchers like Kushtrim Visoka (instruction-tuned LLM, NER, sentiment analysis, TTS), but production quality varies and comprehensive benchmarking is needed. Need for standardized evaluation datasets and systematic model comparison. **Albanian is not yet supported as a first-class language in mainstream NLP libraries like NLTK and spaCy.**
 
 ### Key Actions
 
@@ -1119,6 +1129,12 @@ For policymakers and non-technical readers, here are quick definitions of the ma
 **edisnord/albert-base-v2-sq:** https://huggingface.co/edisnord/albert-base-v2-sq
 
 **Visar/roberta_oscar_al:** https://huggingface.co/Visar/roberta_oscar_al
+
+**Kushtrim Visoka Hugging Face Models:**
+- **Llama-3.1-8B-Instruct-bnb-4bit-shqip:** https://huggingface.co/Kushtrim/Llama-3.1-8B-Instruct-bnb-4bit-shqip
+- **speecht5_finetuned_cv_sq:** https://huggingface.co/Kushtrim/speecht5_finetuned_cv_sq
+- **bert-base-multilingual-cased-sq-sentiment-sst2:** https://huggingface.co/Kushtrim/bert-base-multilingual-cased-sq-sentiment-sst2
+- **bert-base-multilingual-cased-finetuned-albanian-ner:** https://huggingface.co/Kushtrim/bert-base-multilingual-cased-finetuned-albanian-ner
 
 ### Speech Data Resources
 
