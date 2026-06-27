@@ -159,7 +159,9 @@ This plan directly supports:
 
 **[AI Continent Action Plan](https://digital-strategy.ec.europa.eu/en/factpages/ai-continent-action-plan)** (European Commission, April 2025) – the EU's strategic shift from regulation to industrial AI competitiveness. The plan explicitly calls on EU leaders to "harness open source AI as a key enabler of Europe's digital sovereignty," directly mandating the approach this plan takes. The Apply AI strategy (October 2025) adds a "buy European" preference for public sector procurement, giving the e-government integration pillar a direct policy mandate.
 
-**[European Technological Sovereignty Package](https://digital-strategy.ec.europa.eu/en/library/communication-european-tech-sovereignty-accompanied-eu-open-source-strategy)** (European Commission, June 2026) – a package of four interconnected instruments: the **EU Open Source Strategy**, the **Cloud and AI Development Act (CADA)**, Chips Act 2.0, and a Strategic Roadmap for Energy Digitalization. The Open Source Strategy places open source at the centre of EU digital sovereignty, establishes the **Open Source Maintenance Instrument** for long-term sustainability of critical components, and mandates procurement guidelines favouring open standards. CADA explicitly promotes open source components in AI development. The GenAI4EU initiative within the package supports "development and adoption of open and trustworthy AI solutions." This package directly validates and politically reinforces all open licensing commitments in this plan.
+**[European Technological Sovereignty Package](https://digital-strategy.ec.europa.eu/en/library/communication-european-tech-sovereignty-accompanied-eu-open-source-strategy)** (European Commission, COM(2026) 503 final, 3 June 2026) – a package of four interconnected instruments: the **EU Open Source Strategy**, the **Cloud and AI Development Act (CADA)**, Chips Act 2.0, and a Strategic Roadmap for Energy Digitalization. The Open Source Strategy places open source at the centre of EU digital sovereignty, establishes the **Open Source Maintenance Instrument** for long-term sustainability of critical components, and mandates procurement guidelines favouring open standards. CADA explicitly promotes open source components in AI development. The GenAI4EU initiative within the package supports "development and adoption of open and trustworthy AI solutions."
+
+Critically for this plan, **Section 4.4** of the communication makes an explicit, confirmed commitment: *"The EU, taking a Team Europe approach, will support EU open source developers and innovators to deploy their solutions in enlargement and partner countries."* Albania and Kosovo are EU enlargement countries. The same document confirms that **19 AI Factories and 13 AI Factory Antennas are gradually becoming operational across Europe and enlargement countries** — establishing a compute access pathway for model training that does not require full EU membership. This package directly validates and politically reinforces all open licensing commitments in this plan, and Section 4.4 constitutes the strongest explicit EU-level commitment to supporting open source technology deployment in Albanian-speaking territories.
 
 ---
 
@@ -929,18 +931,36 @@ Projects that secure co-funding from EU sources will receive **priority** in the
 - **Digital Europe co-funded projects receive priority support**
 
 **GenAI4EU**
-- Part of the European Technological Sovereignty Package (June 2026); supports "development and adoption of open and trustworthy AI solutions"
+- Part of the European Technological Sovereignty Package (June 2026); supports "development and adoption of open and trustworthy AI solutions"; €50M allocated through Horizon Europe for open AI models
 - Potential funding for the Albanian LLM continual pretraining work package
 - Reference: [GenAI4EU (European Commission)](https://digital-strategy.ec.europa.eu/en/policies/genai4eu)
 
-**European Technological Sovereignty Package — Candidate Country Access (Partial)**
+**DVPS (Diversibus Viis Plurima Solvo)**
+- €29M Horizon Europe grant for open multimodal Foundation Models, coordinated by a consortium of 20 European academic and industrial partners
+- Directly relevant: DVPS lists **"inclusive language technologies"** as one of its explicit application areas alongside cardiology and earth observation
+- Monitor for subgrant or data contribution opportunities as the project progresses
+- Reference: Listed in Annex II of COM(2026) 503 final
 
-The Tech Sovereignty Package (June 2026) — comprising the EU Open Source Strategy, Cloud and AI Development Act (CADA), Chips Act 2.0, and Strategic Roadmap for Energy Digitalization — is primarily designed for EU member states. Direct access by candidate countries is not confirmed and the legislative text does not include explicit candidate-country provisions. However, three indirect pathways exist:
+**ELLIOT**
+- €25M Horizon Europe project developing open source multimodal generalist models (text, images, video, sensor data)
+- Produces models, datasets, and training pipelines that are fully open source and reproducible — compatible with Albanian data contributions
+- Monitor for open calls and data contribution opportunities
+- Reference: Listed in Annex II of COM(2026) 503 final
 
-1. **OpenEuroLLM** (Digital Europe Programme, €37.4M) explicitly covers candidate-country languages — this is the most direct route into EU AI sovereignty infrastructure that is already open to Albanian participation
-2. **CADA "associated third country" derogation** (Article 18): Applies to countries with EU GDPR adequacy decisions. Albania does not yet have a full adequacy decision; progress toward one would unlock formal participation pathways in CADA's sovereignty framework
+**Open Internet Stack (OIS)**
+- €41.3M in Horizon Europe 2026-2027 work programme, mobilised through three calls: "Open Internet Stack Sovereign Solutions" (open source building blocks), "Open Internet Stack Support for Scale," and a Web 4.0 / OIS applications call
+- Broader than language technology but infrastructure components (open data pipelines, interoperability tools) may be applicable
+- Reference: Footnote 72, COM(2026) 503 final
 
-**Recommendation:** Frame all open source language technology outputs explicitly in terms of EU tech sovereignty alignment in communications to the EC. This positions the plan advantageously as CADA and the Open Source Strategy move through the legislative process and accession negotiations advance.
+**European Technological Sovereignty Package — Candidate Country Access**
+
+The Tech Sovereignty Package (June 2026) — comprising the EU Open Source Strategy, Cloud and AI Development Act (CADA), Chips Act 2.0, and Strategic Roadmap for Energy Digitalization — is primarily designed for EU member states, but Section 4.4 of COM(2026) 503 final contains an **explicit, confirmed commitment** covering Albania and Kosovo as enlargement countries. Three access pathways exist:
+
+1. **Section 4.4 Direct Commitment** (confirmed): "The EU, taking a Team Europe approach, will support EU open source developers and innovators to deploy their solutions in enlargement and partner countries." The EU Tech Business Offer specifically extends this to support technology deployment in enlargement countries. This is the plan's strongest EU policy anchor.
+2. **OpenEuroLLM** (Digital Europe Programme, €37.4M) explicitly covers candidate-country languages — already open to Albanian participation
+3. **CADA "associated third country" derogation** (Article 18): Applies to countries with EU GDPR adequacy decisions. Albania does not yet have a full adequacy decision; progress toward one would unlock formal participation pathways in CADA's sovereignty framework
+
+**Recommendation:** Frame all open source language technology outputs explicitly in terms of EU tech sovereignty and the Section 4.4 enlargement commitment in all communications to the EC and in accession negotiation contexts.
 
 **Open Source Maintenance Instrument** (EU Open Source Strategy, June 2026)
 - New instrument for long-term sustainability of critical open source components
@@ -1480,8 +1500,9 @@ This plan was developed rapidly using AI assistance as a conversation starter. *
 - Added Albanian evaluation benchmarks and Open Albanian LLM Leaderboard (§9)
 - Updated timeline to reflect June 2026 current status; split Phase 1 into completed (Q1–Q2) and remaining (Q3–Q4) with urgency flags
 - Added Albanian LLM and synthetic data milestones to Phase 2
-- Added analysis of Tech Sovereignty Package access pathways for candidate countries (indirect via OpenEuroLLM and CADA adequacy track)
-- Added EuroHPC/LUMI, GenAI4EU, CADA, and Open Source Maintenance Instrument to funding mechanisms
+- Added analysis of Tech Sovereignty Package access pathways for candidate countries: Section 4.4 direct commitment (confirmed), OpenEuroLLM, and CADA adequacy track
+- Added EuroHPC/LUMI, GenAI4EU, CADA, Open Source Maintenance Instrument, DVPS, ELLIOT, and Open Internet Stack to funding mechanisms
+- Added Section 4.4 COM(2026) 503 direct quote on enlargement country support and AI Factories in enlargement countries to alignment section
 - Updated resource inventory with STAF treebank (January 2025), new NER corpus (2025), HPLT v2 dataset
 
 **Disclaimer:** This document was created using Large Language Models as a planning template and is an evolving draft open to community input. It requires ongoing expert review before implementation. All funded outputs will be openly licensed to ensure maximum accessibility and community benefit.
