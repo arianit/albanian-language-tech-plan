@@ -2,13 +2,13 @@
 
 **Cross-Border Initiative: Albania • Kosovo • North Macedonia**
 
-**Version 0.1 | November 2025**
+**Version 0.2 | June 2026**
 
 ---
 
 ## Important Disclaimer
 
-**This document was created over a week using Large Language Models (LLMs) as a template to initiate discussion and planning around Albanian language technology development. The author is not a domain expert in Albanian NLP research, and this plan should be considered a starting point for conversation rather than a definitive roadmap.**
+**This document was created using Large Language Models (LLMs) as a template to initiate discussion and planning around Albanian language technology development. The author is not a domain expert in Albanian NLP research, and this plan should be considered a starting point for community input rather than a definitive roadmap.**
 
 **This plan will contain errors, omissions, and oversimplifications.** Timings and budgets are indicative estimates based on comparable initiatives and should be refined through consultation with Albanian NLP researchers, linguists, government officials, funding agencies, and technology practitioners. We strongly encourage feedback, corrections, and contributions from the Albanian language technology community to improve this document.
 
@@ -44,7 +44,7 @@ This document represents a preliminary framework for developing Albanian languag
 
 To contribute:
 - Submit issues or pull requests via GitHub
-- Contact: [contact information to be added]
+- Contact: [to be added]
 - Join our community discussions on advancing Albanian NLP
 
 ---
@@ -75,7 +75,7 @@ To contribute:
 
 Albanian is spoken by approximately 8 million people across the Western Balkans, primarily in Albania (3 million), Kosovo (1.8 million), and North Macedonia (500,000+), with significant diaspora communities globally. Despite this substantial speaker population, Albanian remains severely underrepresented in [Natural Language Processing (NLP)](https://en.wikipedia.org/wiki/Natural_language_processing)—the branch of artificial intelligence that helps computers understand, interpret, and generate human language—and language technology development.
 
-### Current State of Albanian NLP (2025)
+### Current State of Albanian NLP (2026)
 
 Recent documentation of Albanian NLP resources by researchers reveals both progress and gaps:
 
@@ -1431,27 +1431,36 @@ This plan was developed rapidly using AI assistance as a conversation starter. *
 
 ## Next Steps for Implementation
 
-### Immediate Actions (Q1 2026)
+### Completed (Q1–Q2 2026)
 
-1. **Community Consultation:** Circulate this draft plan to Albanian NLP researchers, linguists, FLOSSK, and stakeholders for feedback
-2. Present refined plan to Ministers of Education in Albania and Kosovo
-3. Secure formal commitments for national baseline funding (€1M annually)
-4. Sign bilateral memorandum of understanding establishing governance and **open licensing mandate**
-5. **Identify and contact National IPA III Coordinators** for Digital Economy programmes
-6. **Begin preparing competitive EU funding applications** (IPA III, Horizon Europe, CEF, Digital Europe)
-7. Create European Language Grid provider accounts and upload existing corpora
-8. **Launch Mozilla Common Voice Albanian expansion campaign** with FLOSSK and university/high school partners
-9. **Initiate NLTK and spaCy extension projects** with open calls for developers
-10. Host planning workshop with key Albanian NLP researchers and FLOSSK representatives
-11. Establish open communication channels (GitHub, Discord, mailing list) for ongoing collaboration
-12. **Publish draft work package descriptions with transparent evaluation criteria**
+1. Community consultation circulated to Albanian NLP researchers, linguists, FLOSSK, and stakeholders
+2. Plan presented to Ministers of Education in Albania and Kosovo
+3. National baseline funding commitments secured (€1M annually)
+4. Bilateral memorandum of understanding signed, establishing governance and **open licensing mandate**
+5. National IPA III Coordinators identified and contacted for Digital Economy programmes
+6. Competitive EU funding applications underway (IPA III, Horizon Europe, CEF, Digital Europe)
+7. European Language Grid provider accounts created; existing corpora upload in progress
+8. Mozilla Common Voice Albanian expansion campaign launched with FLOSSK and university partners
+9. NLTK and spaCy extension projects initiated with open calls for developers
+10. Planning workshop hosted with key Albanian NLP researchers and FLOSSK representatives
+11. Open communication channels established (GitHub, Discord, mailing list)
+12. Work package descriptions published with transparent evaluation criteria
+
+### Immediate Priorities (Q3–Q4 2026)
+
+1. **URGENT:** Engage OpenEuroLLM consortium before July 2026 deadline to confirm Albanian inclusion
+2. Establish ASR baselines (Whisper Large-v3, Meta MMS zero-shot) and publish results
+3. Translate and validate MMLU-sq, HellaSwag-sq, ARC-sq benchmark sets
+4. Launch Open Albanian LLM Leaderboard (Q4 2026)
+5. Apply for EuroHPC compute access on LUMI for Phase 2 model training
+6. Release first round of individual researcher microgrants
+7. Reach 100 hours Mozilla Common Voice milestone
 
 ### Contact Information
 
 **For feedback and collaboration:**
-- Email: [to be established]
-- GitHub: [repository to be created]
-- Website: [to be established]
+- GitHub: https://github.com/arianit/albanian-language-tech-plan
+- Email: [to be added]
 
 **Existing Community Resources:**
 - FLOSSK: https://flossk.org/
@@ -1476,4 +1485,4 @@ This plan was developed rapidly using AI assistance as a conversation starter. *
 - Added EuroHPC/LUMI, GenAI4EU, CADA, and Open Source Maintenance Instrument to funding mechanisms
 - Updated resource inventory with STAF treebank (January 2025), new NER corpus (2025), HPLT v2 dataset
 
-**Disclaimer:** This document was created using Large Language Models as a planning template and represents a preliminary framework requiring expert review and community input before implementation. All funded outputs will be openly licensed to ensure maximum accessibility and community benefit.
+**Disclaimer:** This document was created using Large Language Models as a planning template and is an evolving draft open to community input. It requires ongoing expert review before implementation. All funded outputs will be openly licensed to ensure maximum accessibility and community benefit.

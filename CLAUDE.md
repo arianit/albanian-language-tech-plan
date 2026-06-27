@@ -17,7 +17,7 @@ The repository has a nested git structure:
 
 ## Document Context
 
-The plan is a **v0.1 draft** created in November 2025 using LLMs as a template for initiating community discussion. It covers:
+The plan is at **v0.2** (June 2026), initially drafted in November 2025 using LLMs and updated through community input. It covers:
 
 - A cross-border initiative (Albania, Kosovo, North Macedonia) for Albanian NLP infrastructure
 - 5 strategic pillars: language resources, NLP tool development, public service integration, research capacity, governance/funding
