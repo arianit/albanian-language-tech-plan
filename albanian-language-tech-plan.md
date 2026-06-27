@@ -83,7 +83,7 @@ Recent documentation of Albanian NLP resources by researchers reveals both progr
 - **Web Corpora**: OSCAR corpus (~462M words, 1.3M documents), CulturaX (~3.6B tokens, 5.2M documents)
 - **Speech Data**: Mozilla Common Voice (Albanian: 9.2 hours validated, 145 speakers; Gheg Albanian: 11 hours, 14 speakers), Albanian ASR Dataset (18 hours), CASR corpus (20 hours)
 - **Language Models**: Early transformer models (Visar/roberta_oscar_al, edisnord/albert-base-v2-sq trained on CulturaX), fastText word embeddings
-- **Treebanks**: Universal Dependencies treebanks (TSA, STAF, GPS-Gheg ~16K tokens, SALT-Standard ~24K tokens in development)
+- **Treebanks**: Universal Dependencies treebanks (TSA, STAF released January 2025, GPS-Gheg ~16K tokens, SALT-Standard ~24K tokens in development)
 - **Translation**: OPUS parallel corpora, Helsinki-NLP/opus-mt-en-sq model
 - **Tools**: Basic morphological analyzers (uniparser-albanian), Albanian National Corpus (31M words)
 - **Community Contributions**: FLOSSK's pioneering Mozilla Common Voice campaigns establishing community-driven data collection model
@@ -155,6 +155,12 @@ This plan directly supports:
 
 **Mozilla Common Voice Initiative** – contributing to and expanding the open-source multilingual speech dataset ([Mozilla Common Voice](https://commonvoice.mozilla.org/))
 
+**[EU AI Act](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689)** (in force August 2024) – the world's first comprehensive AI regulation. Open-source GPAI models below the 10²⁵ FLOP systemic risk threshold receive meaningful compliance exemptions (technical documentation, downstream provider obligations). Albanian-scale models (7B–34B parameters) are far below this threshold, making the plan's open licensing mandate not only an ethical choice but the legally optimal one under EU law.
+
+**[AI Continent Action Plan](https://digital-strategy.ec.europa.eu/en/factpages/ai-continent-action-plan)** (European Commission, April 2025) – the EU's strategic shift from regulation to industrial AI competitiveness. The plan explicitly calls on EU leaders to "harness open source AI as a key enabler of Europe's digital sovereignty," directly mandating the approach this plan takes. The Apply AI strategy (October 2025) adds a "buy European" preference for public sector procurement, giving the e-government integration pillar a direct policy mandate.
+
+**[European Technological Sovereignty Package](https://digital-strategy.ec.europa.eu/en/library/communication-european-tech-sovereignty-accompanied-eu-open-source-strategy)** (European Commission, June 2026) – a package of four interconnected instruments: the **EU Open Source Strategy**, the **Cloud and AI Development Act (CADA)**, Chips Act 2.0, and a Strategic Roadmap for Energy Digitalization. The Open Source Strategy places open source at the centre of EU digital sovereignty, establishes the **Open Source Maintenance Instrument** for long-term sustainability of critical components, and mandates procurement guidelines favouring open standards. CADA explicitly promotes open source components in AI development. The GenAI4EU initiative within the package supports "development and adoption of open and trustworthy AI solutions." This package directly validates and politically reinforces all open licensing commitments in this plan.
+
 ---
 
 ## Headline Goals (2026–2028)
@@ -225,20 +231,70 @@ Croatia's approach showcases successful regional cooperation through the CEF-fun
 
 This Albanian action plan adapts these models to an accelerated 3-year timeline and cross-border context, recognizing the unique opportunities of regional cooperation among Albania, Kosovo, and North Macedonia while addressing specific challenges facing Albanian.
 
+### National LLM Models: More Analogous Peers
+
+Beyond Estonia and Croatia (language infrastructure programmes), more directly comparable models now exist for Albanian to study and build upon:
+
+**BgGPT (Bulgarian, INSAIT — 2024)**
+
+**Reference:** [insait.ai/insait-creates-leading-bulgarian-first-llm-with-gemma-2](https://insait.ai/insait-creates-leading-bulgarian-first-llm-with-gemma-2/)
+
+Built by the Institute for Computer Science, Artificial Intelligence and Technology (INSAIT, Sofia) — a partnership between Sofia University, ETH Zurich, and EPFL — BgGPT demonstrates what a small-language community can achieve through strong institutional partnerships and the continual pretraining approach. Version 1 (February 2024) fine-tuned Google's Gemma family; BgGPT-GEMMA-2-27B (2024) outperforms Llama 3.1 70B and Qwen 2.5 72B on Bulgarian tasks despite being smaller. Training used ~85B Bulgarian tokens + 15B English. A nationwide public chat system was launched alongside the model. The INSAIT model — anchored by international university partnerships rather than requiring a standalone national AI institute — offers a direct institutional template for Albania and Kosovo.
+
+**Key lessons:**
+- International academic partnerships (ETH Zurich, EPFL equivalent) unlock resources and credibility unavailable to national institutions alone
+- Bilingual training (target language + English) prevents catastrophic forgetting of general capabilities
+- Launching a public-facing chat product immediately drives adoption and demonstrates impact to funders
+
+**Meltemi 7B / Krikri 8B (Greek, ILSP Athena Research Center — 2024/2025)**
+
+**References:**
+- [Meltemi 7B (arXiv:2407.20743)](https://arxiv.org/html/2407.20743v1)
+- [Krikri 8B (Hugging Face)](https://huggingface.co/ilsp/Llama-Krikri-8B-Base)
+
+Built by the Institute for Language and Speech Processing (ILSP), Athena Research & Innovation Center, Greece. Meltemi (2024) continually pretrained Mistral-7B on 28.5B Greek tokens + 10.5B English, extending the tokenizer to 61,362 vocabulary entries to properly represent Greek. Krikri (February 2025) repeated this on Llama 3.1-8B with 56.7B Greek tokens + 21B English, achieving 128K context and supporting Ancient Greek and polytonic text. Both released under Apache 2.0.
+
+This is the closest methodological template for Albanian: a research institute using continual pretraining of an existing open model, bilingual training mix, tokenizer extension, and fully open release — applied to a language with a similarly sized NLP resource base.
+
+**Key lessons:**
+- Continual pretraining of an existing open model (Mistral, Llama) requires far less compute than training from scratch and produces competitive results
+- Extending the tokenizer for the target language's character set is essential for efficiency and quality
+- Releasing successive model versions (Meltemi → Krikri) as data and base models improve is more sustainable than aiming for one large release
+
+**OpenEuroLLM Consortium (EU-funded, 2025–2026)**
+
+**Reference:** [openeurollm.eu](https://openeurollm.eu/)
+
+Launched February 2025 with €37.4M from the Digital Europe Programme (€20.6M EU contribution), coordinated by Charles University Prague with 20 partner organizations including AMD SiloAI, Aleph Alpha, Barcelona Supercomputing Center, and AI Sweden. OpenEuroLLM targets all 24 EU official languages plus candidate-country languages, making Albanian potentially in scope. The project uses HPLT v2 dataset (52 trillion characters across 75+ languages) as its data foundation and trains on LUMI and other EuroHPC machines. Final delivery is July 2026.
+
+**Immediate action required:** The plan's Phase 1 must include direct engagement with the OpenEuroLLM consortium to confirm Albanian inclusion and contribute Albanian data to the HPLT pipeline before the project's final training runs.
+
 ---
 
 ## Implementation Timeline and Key Phases
 
-### Phase 1 (Q1–Q4 2026): Foundation Building & Rapid Mobilization
+> **Status note (June 2026):** Phase 1 is currently underway. Q1–Q2 2026 work is complete or in progress. Q3–Q4 2026 items are the immediate horizon. The OpenEuroLLM consortium deadline (July 2026) is urgent.
 
-- Establish Albanian NLP Resource Center with governance structure
-- Launch intensive corpus collection campaigns (text and speech)
-- **Expand Mozilla Common Voice Albanian contributions** through targeted campaigns building on FLOSSK's model
-- Conduct baseline assessment of existing resources and document current state
-- Release first open call for research grants **(including microgrants for individual researchers)**
-- Secure initial IPA III and national funding commitments
+### Phase 1 — Q1–Q2 2026 (Complete / Underway)
+
+- Establish Albanian NLP Resource Center governance structure and node agreements
+- Launch corpus collection campaigns (text and speech); initial contacts with media and university partners
+- Secure national funding commitments from Albania and Kosovo Ministries of Education
 - Publish inventory of existing Albanian NLP resources and tools
-- **All initial releases openly licensed**
+- Begin Mozilla Common Voice Albanian expansion with FLOSSK partner outreach
+- Submit IPA III applications
+
+### Phase 1 — Q3–Q4 2026 (Remaining — Immediate Priority)
+
+- **URGENT (July 2026):** Engage OpenEuroLLM consortium to confirm Albanian inclusion as a candidate-country language and contribute cleaned Albanian data to the HPLT v2 pipeline before final training runs
+- Establish ASR baselines: evaluate zero-shot Whisper Large-v3 and Meta MMS on Albanian; publish results to set evidence-based WER targets
+- Check HPLT v2 dataset for existing Albanian coverage; contribute cleaned data if insufficient
+- Translate and validate MMLU-sq, HellaSwag-sq, ARC-sq benchmarks (Q3 2026)
+- Launch Open Albanian LLM Leaderboard on Hugging Face Spaces (Q4 2026)
+- Apply for EuroHPC extreme-scale compute access on LUMI supercomputer for Phase 2 model training
+- Release first open call for research grants, including microgrants for individual researchers
+- Reach 100 hours Mozilla Common Voice milestone
+- **All releases openly licensed**
 
 ### Phase 2 (2027): Accelerated Development & Community Building
 
@@ -246,6 +302,8 @@ This Albanian action plan adapts these models to an accelerated 3-year timeline 
 - Develop core NLP tools (tokenizers, taggers, NER systems)
 - **Launch Mozilla Common Voice sprint campaigns** targeting 500+ hours, expanding FLOSSK's work to universities and high schools
 - **Begin NLTK and spaCy extension projects**
+- **Begin Albanian LLM continual pretraining** on 40B+ token bilingual corpus (LUMI compute); release base model checkpoint
+- **Launch synthetic data generation pipeline**; release 50,000+ Albanian instruction pairs (Q2 2027)
 - Launch pilot integrations with 3-5 e-government services
 - Conduct first Albanian NLP workshop/hackathon with **open competition**
 - Submit Horizon Europe applications
@@ -257,6 +315,7 @@ This Albanian action plan adapts these models to an accelerated 3-year timeline 
 - Complete 60M-token corpus (Q4 2028)
 - Deploy language technologies in 8-10 public service platforms
 - **Achieve 1,000+ hours Mozilla Common Voice data** across dialects through university and high school engagement
+- **Release instruction-tuned Albanian LLM** with domain-adapted variants (legal, medical)
 - **Complete NLTK and spaCy Albanian support**
 - Finalize and benchmark all 6-8 open-source tools
 - Establish partnerships for post-2028 continuation
@@ -444,7 +503,12 @@ Compile:
 - TTS: Kushtrim/speecht5_finetuned_cv_sq
 - Instruction-following: Kushtrim/Llama-3.1-8B-Instruct-bnb-4bit-shqip
 
-**Assessment:** Foundational tools exist including recent contributions from researchers like Kushtrim Visoka (instruction-tuned LLM, NER, sentiment analysis, TTS), but production quality varies and comprehensive benchmarking is needed. Need for standardized evaluation datasets and systematic model comparison. **Albanian is not yet supported as a first-class language in mainstream NLP libraries like NLTK and spaCy.**
+**2025 Additions:**
+- **Albanian NER Corpus (2025):** Largest-ever Albanian NER corpus, sourced from Albanian news platforms; 10 ML models trained with Extra Trees and Random Forest achieving ~96% accuracy and 95% F1. (SpringerLink, 2025)
+- **STAF Treebank (January 2025):** Saarbrücken Treebank of Albanian Fiction released, expanding UD coverage
+- **HPLT v2 Dataset:** High Performance Language Technologies v2 (75+ languages, 52 trillion characters) likely contains Albanian web data; requires verification and contribution of cleaned Albanian data
+
+**Assessment:** Foundational tools exist including recent contributions from researchers like Kushtrim Visoka (instruction-tuned LLM, NER, sentiment analysis, TTS), but production quality varies and comprehensive benchmarking is needed. Standardized evaluation benchmarks do not yet exist for Albanian — this is the most critical gap for tracking progress. **Albanian is not yet supported as a first-class language in mainstream NLP libraries like NLTK and spaCy.** Albanian is absent from EuroLLM-9B (35 languages) and TildeOpen-30B despite being an EU candidate-country language, making the OpenEuroLLM engagement a priority.
 
 ### Key Actions
 
@@ -483,10 +547,11 @@ Train neural machine translation models:
 
 #### 4. Automatic Speech Recognition (ASR)
 
-Develop [ASR](https://en.wikipedia.org/wiki/Speech_recognition) systems:
-- Fine-tune Wav2Vec 2.0 and Whisper-based models on Albanian data
+Develop [ASR](https://en.wikipedia.org/wiki/Speech_recognition) systems using a two-baseline approach:
+- **Establish baselines first:** Evaluate zero-shot performance of (1) **Whisper Large-v3** (OpenAI, November 2023 — 10–20% WER improvement over v2) and (2) **Meta MMS** (Massively Multilingual Speech, 1,100+ languages including Albanian) before any fine-tuning work begins. This establishes realistic targets.
+- **Fine-tune Whisper Large-v3** on Mozilla Common Voice Albanian data as the primary approach; the Whisper-LM technique (combining Whisper with a language model decoder) offers additional gains for low-resource settings
 - **Integrate Mozilla Common Voice data** as primary training resource
-- Target Word Error Rates: <8% for broadcast news, <15% for conversational speech
+- Target Word Error Rates: <8% for broadcast news, <15% for conversational speech — to be recalibrated after baseline evaluation against Whisper Large-v3
 - Support dialect variation (Gheg and Tosk)
 - Create applications for transcription services
 
@@ -504,11 +569,15 @@ Build:
 
 #### 6. Language Model Development
 
-- **Evaluate and improve existing models** (albert-base-v2-sq, roberta_oscar_al)
-- Fine-tune multilingual LLMs for Albanian (mBERT, XLM-RoBERTa)
-- Create domain-adapted models for specialized fields
-- Ensure ethical AI practices including bias mitigation
-- Release model weights, training code, and evaluation benchmarks
+The field has converged on **continual pretraining of existing open models** as the cost-effective approach for low-resource European languages, demonstrated by Meltemi/Krikri (Greek, ILSP), BgGPT (Bulgarian, INSAIT), Bielik (Polish, SpeakLeash), and EstLLM (Estonian). Training a model from scratch is not warranted at current Albanian data volumes.
+
+**Recommended approach:**
+- **Phase 1 (2026):** Evaluate existing models (albert-base-v2-sq, Kushtrim/Llama-3.1-8B-Instruct-bnb-4bit-shqip) on standardized benchmarks; establish the Albanian NLP Leaderboard (see §9 below) to create comparable baselines
+- **Phase 2 (2027):** Continually pretrain Llama 3.x or Mistral on a bilingual Albanian/English corpus (~80% Albanian, ~20% English) using a minimum of 40B Albanian tokens. The English retention component is essential to prevent catastrophic forgetting of general capabilities — established practice from Meltemi (28.5B Greek tokens) and BgGPT (85B Bulgarian tokens). Extend the tokenizer vocabulary to include Albanian-specific characters and morphological patterns for training efficiency.
+- **Phase 3 (2028):** Instruction-tune the pretrained base model on synthetic and human-verified Albanian instruction data; create domain-adapted variants for legal and medical use cases
+- **Engage OpenEuroLLM consortium** (EU-funded, €37.4M, deadline July 2026) to secure Albanian inclusion as a candidate-country language — this may provide a multilingual base model at no additional training cost
+
+**Ensure ethical AI practices** including bias mitigation and GDPR-compliant data processing throughout.
 
 **Licensing:** Model weights under **Apache 2.0**, training code under **MIT**, documentation under **CC-BY 4.0**.
 
@@ -552,14 +621,42 @@ Build:
 - Recognition for open-source contributions
 - **All grant-funded tools must be openly licensed (MIT or Apache 2.0)**
 
+#### 9. Albanian Evaluation Benchmarks and Leaderboard
+
+Without standardized benchmarks, it is impossible to measure whether Albanian NLP is improving or to compare models fairly. Every successful national LLM programme (BgGPT, Bielik/Open PL LLM Leaderboard, NorwAI/NorBench) built evaluation infrastructure before or alongside model development. This is a prerequisite, not a follow-on.
+
+**Deliverables:**
+- Translate and validate standard benchmarks into Albanian: **MMLU-sq** (57-subject multiple choice), **HellaSwag-sq** (commonsense reasoning), **ARC-sq** (grade-school science), and **TruthfulQA-sq** (factual accuracy)
+- Establish an **Open Albanian LLM Leaderboard** (hosted on Hugging Face Spaces) to provide continuous, publicly visible model comparison — motivating community contributions and making progress measurable for funders
+- Create Albanian-specific evaluation sets for domain tasks: legal text comprehension, medical Q&A, government document summarization
+
+**Licensing:** All benchmark datasets released under **CC-BY 4.0**; leaderboard infrastructure under **MIT**.
+
+**Timeline:** Q3 2026 (benchmark translation), Q4 2026 (leaderboard launch) — must precede Phase 2 model development to enable meaningful evaluation.
+
+#### 10. Synthetic Data Generation Pipeline
+
+For low-resource languages, synthetic data generation — using existing capable multilingual LLMs to produce Albanian instruction and task data, then filtering for quality — is now standard practice (used in Bielik, EstLLM, and multiple EMNLP 2025 findings). Albanian lacks sufficient annotated instruction data for fine-tuning without this approach.
+
+**Deliverables:**
+- Build a reproducible pipeline using existing multilingual LLMs (e.g., EuroLLM-9B, Llama 3.x) to generate Albanian instruction pairs across diverse domains
+- Validate quality via back-translation to English and human review by Albanian linguists
+- Release the pipeline code and the resulting dataset openly
+- Target: 50,000+ verified Albanian instruction pairs by Q2 2027
+
+**Licensing:** Pipeline code under **MIT**; generated dataset under **CC-BY 4.0** (with explicit disclosure of synthetic origin in dataset documentation).
+
 ### Performance Indicators (2026-2028)
 
 - 6-8 open-source NLP tools released (Q4 2028)
 - POS tagger accuracy: 90%+ (Q4 2027)
 - NER F1-score: 80%+ (Q4 2028)
-- ASR WER: <8% (broadcast), <15% (conversational) (Q4 2028)
+- ASR WER: targets to be set after Whisper Large-v3 and MMS baseline evaluation (Q2 2026); indicative targets <8% broadcast, <15% conversational (Q4 2028)
 - Machine translation BLEU: 25+ for Albanian-English (Q4 2028)
-- 2 fine-tuned or improved LLMs released with documentation (Q4 2028)
+- **Albanian LLM via continual pretraining** on 40B+ tokens, with instruction-tuned variant released (Q4 2027)
+- **OpenEuroLLM Albanian inclusion confirmed or Albanian model released independently** (Q4 2027)
+- **Open Albanian LLM Leaderboard live** with MMLU-sq, HellaSwag-sq, ARC-sq benchmarks (Q4 2026)
+- **50,000+ synthetic instruction pairs** released for Albanian (Q2 2027)
 - **Albanian support in NLTK** (Q4 2027)
 - **Albanian support in spaCy** (Q4 2028)
 - 500+ GitHub stars/downloads across all tools (Q4 2028)
@@ -831,6 +928,30 @@ Projects that secure co-funding from EU sources will receive **priority** in the
 - Target: €600K-900K through Alliance for Language Technologies
 - Reference: [Digital Europe Programme](https://digital-strategy.ec.europa.eu/en/activities/digital-programme)
 - **Digital Europe co-funded projects receive priority support**
+
+**GenAI4EU**
+- Part of the European Technological Sovereignty Package (June 2026); supports "development and adoption of open and trustworthy AI solutions"
+- Potential funding for the Albanian LLM continual pretraining work package
+- Reference: [GenAI4EU (European Commission)](https://digital-strategy.ec.europa.eu/en/policies/genai4eu)
+
+**European Technological Sovereignty Package — Candidate Country Access (Partial)**
+
+The Tech Sovereignty Package (June 2026) — comprising the EU Open Source Strategy, Cloud and AI Development Act (CADA), Chips Act 2.0, and Strategic Roadmap for Energy Digitalization — is primarily designed for EU member states. Direct access by candidate countries is not confirmed and the legislative text does not include explicit candidate-country provisions. However, three indirect pathways exist:
+
+1. **OpenEuroLLM** (Digital Europe Programme, €37.4M) explicitly covers candidate-country languages — this is the most direct route into EU AI sovereignty infrastructure that is already open to Albanian participation
+2. **CADA "associated third country" derogation** (Article 18): Applies to countries with EU GDPR adequacy decisions. Albania does not yet have a full adequacy decision; progress toward one would unlock formal participation pathways in CADA's sovereignty framework
+
+**Recommendation:** Frame all open source language technology outputs explicitly in terms of EU tech sovereignty alignment in communications to the EC. This positions the plan advantageously as CADA and the Open Source Strategy move through the legislative process and accession negotiations advance.
+
+**Open Source Maintenance Instrument** (EU Open Source Strategy, June 2026)
+- New instrument for long-term sustainability of critical open source components
+- Target Albanian NLP tools (NLTK extension, spaCy pipeline) for this instrument once released and widely used; eligibility for candidate countries is not yet confirmed but warrants monitoring as the instrument is operationalized
+
+**EuroHPC Extreme-Scale Access Grants**
+- LUMI supercomputer (Finland) and other EuroHPC machines available to EU and candidate-country institutions
+- Used by Poro 34B, Viking, TildeOpen, OpenEuroLLM; directly applicable for Albanian model continual pretraining
+- Apply in Phase 1 (2026) for Phase 2 (2027) training runs
+- Reference: [LUMI supercomputer](https://lumi-supercomputer.eu/)
 
 **UNESCO and Research Foundations**
 - Target: €100K-200K for language preservation
@@ -1193,6 +1314,50 @@ For policymakers and non-technical readers, here are quick definitions of the ma
 
 **OPUS Parallel Corpora:** https://opus.nlpl.eu/
 
+### EU Policy Frameworks
+
+**EU AI Act:** https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689
+
+**AI Continent Action Plan (April 2025):** https://digital-strategy.ec.europa.eu/en/factpages/ai-continent-action-plan
+
+**European Technological Sovereignty Package (June 2026):** https://digital-strategy.ec.europa.eu/en/library/communication-european-tech-sovereignty-accompanied-eu-open-source-strategy
+
+**EU Open Source Strategy:** https://digital-strategy.ec.europa.eu/en/policies/open-source-strategy
+
+**GenAI4EU:** https://digital-strategy.ec.europa.eu/en/policies/genai4eu
+
+**Cloud and AI Development Act (CADA):** https://digital-strategy.ec.europa.eu/en/policies/cloud-and-ai-development-act
+
+### National LLM Models and European AI Infrastructure
+
+**BgGPT (INSAIT, Bulgaria):** https://insait.ai/insait-creates-leading-bulgarian-first-llm-with-gemma-2/
+
+**Meltemi 7B paper (arXiv):** https://arxiv.org/html/2407.20743v1
+
+**Krikri 8B (Hugging Face):** https://huggingface.co/ilsp/Llama-Krikri-8B-Base
+
+**Bielik 7B v0.1 paper (arXiv):** https://arxiv.org/abs/2410.18565
+
+**EuroLLM-9B (Hugging Face):** https://huggingface.co/blog/eurollm-team/eurollm-9b
+
+**OpenEuroLLM Project:** https://openeurollm.eu/
+
+**HPLT Project:** https://hplt-project.org/
+
+**LUMI Supercomputer:** https://lumi-supercomputer.eu/
+
+**Poro 34B (arXiv):** https://arxiv.org/pdf/2404.01856
+
+**Meta MMS (Massively Multilingual Speech):** https://ai.meta.com/blog/multilingual-model-speech-recognition/
+
+**Whisper Large-v3 (Hugging Face):** https://huggingface.co/openai/whisper-large-v3
+
+### Albanian NLP — 2025 Updates
+
+**Albanian NER Corpus 2025 (SpringerLink):** https://link.springer.com/chapter/10.1007/978-3-031-87769-8_14
+
+**STAF Treebank (January 2025):** https://universaldependencies.org/treebanks/sq_staf/
+
 ### Key Research Papers
 
 **Abadji, J. et al. (2022).** "Towards a Cleaner Document-Oriented Multilingual Crawled Corpus." *arXiv:2201.06642*. https://arxiv.org/abs/2201.06642
@@ -1294,8 +1459,21 @@ This plan was developed rapidly using AI assistance as a conversation starter. *
 
 ---
 
-**Document Version:** 0.1 (Draft for Community Consultation)  
-**Publication Date:** November 2025  
+**Document Version:** 0.2 (Draft for Community Consultation)
+**Publication Date:** June 2026 (v0.1: November 2025)
 **License:** Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+**Changes in v0.2:**
+- Added alignment with EU AI Act, AI Continent Action Plan (April 2025), and European Technological Sovereignty Package / EU Open Source Strategy (June 2026)
+- Added national LLM case studies: BgGPT (Bulgaria), Meltemi/Krikri (Greece), OpenEuroLLM consortium
+- Updated LLM development strategy to continual pretraining methodology
+- Updated ASR baseline references to Whisper Large-v3 and Meta MMS
+- Added synthetic data generation pipeline as a named strategy (§10)
+- Added Albanian evaluation benchmarks and Open Albanian LLM Leaderboard (§9)
+- Updated timeline to reflect June 2026 current status; split Phase 1 into completed (Q1–Q2) and remaining (Q3–Q4) with urgency flags
+- Added Albanian LLM and synthetic data milestones to Phase 2
+- Added analysis of Tech Sovereignty Package access pathways for candidate countries (indirect via OpenEuroLLM and CADA adequacy track)
+- Added EuroHPC/LUMI, GenAI4EU, CADA, and Open Source Maintenance Instrument to funding mechanisms
+- Updated resource inventory with STAF treebank (January 2025), new NER corpus (2025), HPLT v2 dataset
 
 **Disclaimer:** This document was created using Large Language Models as a planning template and represents a preliminary framework requiring expert review and community input before implementation. All funded outputs will be openly licensed to ensure maximum accessibility and community benefit.
