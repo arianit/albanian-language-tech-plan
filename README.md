@@ -7,6 +7,13 @@
 
 Albanian is spoken by approximately 8 million people but remains severely underrepresented in natural language processing and AI. This plan is a 3-year accelerated roadmap to build foundational language technology infrastructure for Albanian — corpora, NLP tools, speech recognition, language models, and public service integrations — through coordinated cross-border effort.
 
+## Table of Contents
+
+- [What this plan covers](#what-this-plan-covers)
+- [Status](#status)
+- [Disclaimer](#disclaimer)
+- [Contributing](#contributing)
+
 ## What this plan covers
 
 - **Language resources:** A 60-million-token text corpus, 1,000 hours of annotated speech (targeting 1,000+ hours via Mozilla Common Voice), and 4 million parallel translation pairs
