@@ -273,27 +273,26 @@ Launched February 2025 with €37.4M from the Digital Europe Programme (€20.6M
 
 ## Implementation Timeline and Key Phases
 
-> **Status note (June 2026):** Phase 1 is currently underway. Q1–Q2 2026 work is complete or in progress. Q3–Q4 2026 items are the immediate horizon. The OpenEuroLLM consortium deadline (July 2026) is urgent.
+> **Note:** Implementation is planned to begin September 2026. The OpenEuroLLM consortium deadline (July 2026) requires pre-implementation engagement to secure Albanian inclusion before the project's final training runs.
 
-### Phase 1 — Q1–Q2 2026 (Complete / Underway)
+### Pre-Implementation (July–August 2026)
 
-- Establish Albanian NLP Resource Center governance structure and node agreements
-- Launch corpus collection campaigns (text and speech); initial contacts with media and university partners
+- Engage OpenEuroLLM consortium to confirm Albanian inclusion as a candidate-country language and contribute cleaned Albanian data to the HPLT v2 pipeline — **must happen before July 2026 deadline**
+- Check HPLT v2 dataset for existing Albanian coverage; prepare cleaned Albanian data contribution
+- Finalise governance agreements and node appointments (Tirana, Prishtina, Tetova)
 - Secure national funding commitments from Albania and Kosovo Ministries of Education
+- Submit IPA III applications; apply for EuroHPC extreme-scale compute access on LUMI
+
+### Phase 1 (September–December 2026): Foundation Building
+
+- Establish Albanian NLP Resource Center with governance structure operational
+- Launch corpus collection campaigns; initial contacts with media and university partners
 - Publish inventory of existing Albanian NLP resources and tools
-- Begin Mozilla Common Voice Albanian expansion with FLOSSK partner outreach
-- Submit IPA III applications
-
-### Phase 1 — Q3–Q4 2026 (Remaining — Immediate Priority)
-
-- **URGENT (July 2026):** Engage OpenEuroLLM consortium to confirm Albanian inclusion as a candidate-country language and contribute cleaned Albanian data to the HPLT v2 pipeline before final training runs
 - Establish ASR baselines: evaluate zero-shot Whisper Large-v3 and Meta MMS on Albanian; publish results to set evidence-based WER targets
-- Check HPLT v2 dataset for existing Albanian coverage; contribute cleaned data if insufficient
-- Translate and validate MMLU-sq, HellaSwag-sq, ARC-sq benchmarks (Q3 2026)
-- Launch Open Albanian LLM Leaderboard on Hugging Face Spaces (Q4 2026)
-- Apply for EuroHPC extreme-scale compute access on LUMI supercomputer for Phase 2 model training
+- Translate and validate MMLU-sq, HellaSwag-sq, ARC-sq benchmarks
+- Launch Open Albanian LLM Leaderboard on Hugging Face Spaces
+- Begin Mozilla Common Voice Albanian expansion with FLOSSK and university partners; target 100 hours by year end
 - Release first open call for research grants, including microgrants for individual researchers
-- Reach 100 hours Mozilla Common Voice milestone
 - **All releases openly licensed**
 
 ### Phase 2 (2027): Accelerated Development & Community Building
@@ -1431,30 +1430,30 @@ This plan was developed rapidly using AI assistance as a conversation starter. *
 
 ## Next Steps for Implementation
 
-### Completed (Q1–Q2 2026)
+### Immediate Actions (June–August 2026)
 
-1. Community consultation circulated to Albanian NLP researchers, linguists, FLOSSK, and stakeholders
-2. Plan presented to Ministers of Education in Albania and Kosovo
-3. National baseline funding commitments secured (€1M annually)
-4. Bilateral memorandum of understanding signed, establishing governance and **open licensing mandate**
-5. National IPA III Coordinators identified and contacted for Digital Economy programmes
-6. Competitive EU funding applications underway (IPA III, Horizon Europe, CEF, Digital Europe)
-7. European Language Grid provider accounts created; existing corpora upload in progress
-8. Mozilla Common Voice Albanian expansion campaign launched with FLOSSK and university partners
-9. NLTK and spaCy extension projects initiated with open calls for developers
-10. Planning workshop hosted with key Albanian NLP researchers and FLOSSK representatives
-11. Open communication channels established (GitHub, Discord, mailing list)
-12. Work package descriptions published with transparent evaluation criteria
+1. Circulate plan to Albanian NLP researchers, linguists, FLOSSK, and stakeholders for feedback
+2. Present plan to Ministers of Education in Albania and Kosovo
+3. Secure formal commitments for national baseline funding (€1M annually)
+4. Sign bilateral memorandum of understanding establishing governance and **open licensing mandate**
+5. **Engage OpenEuroLLM consortium before July 2026 deadline** to confirm Albanian inclusion and contribute data
+6. Identify and contact National IPA III Coordinators for Digital Economy programmes
+7. Begin preparing competitive EU funding applications (IPA III, Horizon Europe, CEF, Digital Europe)
+8. Apply for EuroHPC extreme-scale compute access on LUMI for Phase 2 model training
+9. Host planning workshop with key Albanian NLP researchers and FLOSSK representatives
+10. Establish open communication channels (GitHub, Discord, mailing list)
+11. Publish work package descriptions with transparent evaluation criteria
 
-### Immediate Priorities (Q3–Q4 2026)
+### Phase 1 Actions (September–December 2026)
 
-1. **URGENT:** Engage OpenEuroLLM consortium before July 2026 deadline to confirm Albanian inclusion
-2. Establish ASR baselines (Whisper Large-v3, Meta MMS zero-shot) and publish results
-3. Translate and validate MMLU-sq, HellaSwag-sq, ARC-sq benchmark sets
-4. Launch Open Albanian LLM Leaderboard (Q4 2026)
-5. Apply for EuroHPC compute access on LUMI for Phase 2 model training
-6. Release first round of individual researcher microgrants
-7. Reach 100 hours Mozilla Common Voice milestone
+1. Stand up Albanian NLP Resource Center with governance structure operational
+2. Launch corpus collection campaigns and European Language Grid provider accounts
+3. Establish ASR baselines (Whisper Large-v3, Meta MMS zero-shot) and publish results
+4. Translate and validate MMLU-sq, HellaSwag-sq, ARC-sq benchmark sets
+5. Launch Open Albanian LLM Leaderboard
+6. Launch Mozilla Common Voice expansion campaign; target 100 hours by year end
+7. Release first round of individual researcher microgrants
+8. Initiate NLTK and spaCy extension projects with open calls for developers
 
 ### Contact Information
 

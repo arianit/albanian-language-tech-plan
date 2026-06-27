@@ -28,7 +28,7 @@ Albanian is spoken by approximately 8 million people but remains severely underr
 
 ## Status
 
-Phase 1 (2026) is underway. See the [full plan](albanian-language-tech-plan.md) for the current implementation timeline.
+This is a v0.2 draft open for community feedback and institutional uptake. See the [full plan](albanian-language-tech-plan.md) for the proposed implementation timeline.
 
 ## Disclaimer
 
@@ -40,7 +40,5 @@ Feedback, corrections, and contributions from NLP researchers, linguists, govern
 
 - Open an issue or pull request on this repository
 - Contact: [to be added]
-- FLOSSK: https://flossk.org/
-- Mozilla Common Voice Albanian: https://commonvoice.mozilla.org/sq
 
 **License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
