@@ -478,6 +478,7 @@ Compile:
 - [Albanian ASR](https://github.com/florijanqosja/Albanian-ASR): Python-based speech-to-text with Docker support
 - GiellaLT Albanian Grammar: Finite state analyzers for morphological analysis
 - Uniparser-Albanian: Rule-based morphological analysis and lemmatization
+- eSpeak NG Albanian: Rule-based text-to-speech; Albanian pronunciation rules improved by edonseki
 
 **Language Models:**
 - **Visar/roberta_oscar_al**: First Albanian RoBERTa attempt (convergence issues)
@@ -1277,7 +1278,7 @@ For policymakers and non-technical readers, here are quick definitions of the ma
 - **bert-base-multilingual-cased-finetuned-albanian-ner:** https://huggingface.co/Kushtrim/bert-base-multilingual-cased-finetuned-albanian-ner
 
 **edonseki Hugging Face Models:** https://huggingface.co/edonseki
-- Also worked on improving the Albanian rules in eSpeak (rule-based speech synthesis)
+- Also worked on improving the Albanian rules in eSpeak NG (rule-based speech synthesis)
 - **folsh.ai:** https://huggingface.co/edonseki/folsh.ai
 
 ### Speech Data Resources
