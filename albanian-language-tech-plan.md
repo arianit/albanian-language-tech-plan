@@ -1277,6 +1277,7 @@ For policymakers and non-technical readers, here are quick definitions of the ma
 - **bert-base-multilingual-cased-finetuned-albanian-ner:** https://huggingface.co/Kushtrim/bert-base-multilingual-cased-finetuned-albanian-ner
 
 **edonseki Hugging Face Models:** https://huggingface.co/edonseki
+- Also worked on improving the Albanian rules in eSpeak (rule-based speech synthesis)
 - **folsh.ai:** https://huggingface.co/edonseki/folsh.ai
 
 ### Speech Data Resources
