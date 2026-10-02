@@ -1276,6 +1276,9 @@ For policymakers and non-technical readers, here are quick definitions of the ma
 - **bert-base-multilingual-cased-sq-sentiment-sst2:** https://huggingface.co/Kushtrim/bert-base-multilingual-cased-sq-sentiment-sst2
 - **bert-base-multilingual-cased-finetuned-albanian-ner:** https://huggingface.co/Kushtrim/bert-base-multilingual-cased-finetuned-albanian-ner
 
+**edonseki Hugging Face Models:** https://huggingface.co/edonseki
+- **folsh.ai:** https://huggingface.co/edonseki/folsh.ai
+
 ### Speech Data Resources
 
 **Mozilla Common Voice:** https://commonvoice.mozilla.org/
