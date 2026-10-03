@@ -10,6 +10,7 @@ Albanian is spoken by approximately 8 million people but remains severely underr
 ## Table of Contents
 
 - [What this plan covers](#what-this-plan-covers)
+- [Student projects](#student-projects)
 - [Status](#status)
 - [Disclaimer](#disclaimer)
 - [Contributing](#contributing)
@@ -25,6 +26,10 @@ Albanian is spoken by approximately 8 million people but remains severely underr
 **Budget:** €6.5–8.2 million over 3 years (Albania and Kosovo governments + EU co-funding via IPA III, Horizon Europe, Digital Europe, CEF)
 
 **All outputs openly licensed** — CC0, CC-BY, MIT, or Apache 2.0.
+
+## Student projects
+
+Looking for a BSc, MSc or graduation-project topic? See [Student Projects](student-projects.md): 21 existing language tools (eSpeak NG, Hunspell, spaCy, Tesseract and others) that can be improved for Albanian, with URLs and the current `sq` status of each.
 
 ## Status
 

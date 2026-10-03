@@ -120,7 +120,7 @@ Albanian faces severe digital underrepresentation despite its 8 million speakers
 
 **Inadequate NLP Tools:**
 - No production-grade Albanian spell-checkers or grammar checkers integrated into major platforms
-- Albanian not supported by mainstream NLP libraries (NLTK, spaCy) as a first-class language
+- Albanian is only minimally supported by mainstream NLP libraries: spaCy has a bare `sq` skeleton (stop words only, no tokenizer rules, lemmatizer or trained pipeline) and NLTK has an Albanian stop-word list, but neither offers a first-class Albanian pipeline
 - Basic [open-source Albanian NLP tools](https://github.com/arditdine/albanian-nlp) remain in early development stages
 - Limited [named entity recognition (NER)](https://en.wikipedia.org/wiki/Named-entity_recognition) systems
 - Machine translation quality significantly below major language pairs
@@ -509,7 +509,7 @@ Compile:
 - **STAF Treebank (January 2025):** Saarbrücken Treebank of Albanian Fiction released, expanding UD coverage
 - **HPLT v2 Dataset:** High Performance Language Technologies v2 (75+ languages, 52 trillion characters) likely contains Albanian web data; requires verification and contribution of cleaned Albanian data
 
-**Assessment:** Foundational tools exist including recent contributions from researchers like Kushtrim Visoka (instruction-tuned LLM, NER, sentiment analysis, TTS), but production quality varies and comprehensive benchmarking is needed. Standardized evaluation benchmarks do not yet exist for Albanian — this is the most critical gap for tracking progress. **Albanian is not yet supported as a first-class language in mainstream NLP libraries like NLTK and spaCy.** Albanian is absent from EuroLLM-9B (35 languages) and TildeOpen-30B despite being an EU candidate-country language, making the OpenEuroLLM engagement a priority.
+**Assessment:** Foundational tools exist including recent contributions from researchers like Kushtrim Visoka (instruction-tuned LLM, NER, sentiment analysis, TTS), but production quality varies and comprehensive benchmarking is needed. Standardized evaluation benchmarks do not yet exist for Albanian — this is the most critical gap for tracking progress. **Albanian is only minimally supported in mainstream NLP libraries like NLTK and spaCy** (stop-word lists and, in spaCy, a blank-language skeleton; no tokenizer rules, tagger, parser, lemmatizer or stemmer), and is not yet supported as a first-class language. Albanian is absent from EuroLLM-9B (35 languages) and TildeOpen-30B despite being an EU candidate-country language, making the OpenEuroLLM engagement a priority.
 
 ### Key Actions
 
