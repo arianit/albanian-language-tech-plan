@@ -478,7 +478,7 @@ Compile:
 - [Albanian ASR](https://github.com/florijanqosja/Albanian-ASR): Python-based speech-to-text with Docker support
 - GiellaLT Albanian Grammar: Finite state analyzers for morphological analysis
 - Uniparser-Albanian: Rule-based morphological analysis and lemmatization
-- eSpeak NG Albanian: Rule-based text-to-speech; Albanian pronunciation rules improved by edonseki
+- eSpeak NG Albanian: Rule-based text-to-speech; edonseki has proposed substantial improvements to the Albanian pronunciation rules ([PR #2547](https://github.com/espeak-ng/espeak-ng/pull/2547), open and unreviewed as of October 2026)
 
 **Language Models:**
 - **Visar/roberta_oscar_al**: First Albanian RoBERTa attempt (convergence issues)
@@ -1278,8 +1278,8 @@ For policymakers and non-technical readers, here are quick definitions of the ma
 - **bert-base-multilingual-cased-finetuned-albanian-ner:** https://huggingface.co/Kushtrim/bert-base-multilingual-cased-finetuned-albanian-ner
 
 **edonseki Hugging Face Models:** https://huggingface.co/edonseki
-- Also worked on improving the Albanian rules in eSpeak NG (rule-based speech synthesis)
-- **folsh.ai:** https://huggingface.co/edonseki/folsh.ai
+- Also proposed improvements to the Albanian rules in eSpeak NG (rule-based speech synthesis; [PR #2547](https://github.com/espeak-ng/espeak-ng/pull/2547), not yet merged)
+- **folsh.ai:** https://huggingface.co/edonseki/folsh.ai: four Albanian Piper voices. `edon` is CC0 and is also the official Piper `sq_AL` voice; `arben`, `arta` and `dren` are AGPL-3.0
 
 ### Speech Data Resources
 
