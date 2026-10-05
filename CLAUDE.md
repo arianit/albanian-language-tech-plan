@@ -22,7 +22,7 @@ The plan is at **v0.2** (June 2026), initially drafted in November 2025 using LL
 - A cross-border initiative (Albania, Kosovo, North Macedonia) for Albanian NLP infrastructure
 - 5 strategic pillars: language resources, NLP tool development, public service integration, research capacity, governance/funding
 - €6.5–8.2M budget over 3 years (national governments + EU co-funding)
-- All funded outputs must be openly licensed (CC0, CC-BY, MIT, Apache 2.0)
+- All funded outputs must be openly licensed: permissive (CC0, CC-BY, MIT, Apache 2.0) or copyleft (GPL, AGPL, CC BY-SA); not NC or ND
 
 The document is licensed **CC BY 4.0**.
 

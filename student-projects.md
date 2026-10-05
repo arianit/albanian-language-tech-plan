@@ -14,7 +14,7 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 - **Class project** is a smaller slice for a team assignment of 2–6 weeks inside a regular course, with the course named. Course names are generic (computer science, linguistics, translation); match them to your own curriculum. See [Class projects by subject](#class-projects-by-subject).
 - **Status** facts were checked against the primary source (repository, package index or API) on the snapshot date above. Anything I could not confirm is listed at the end under [Unverified leads](#unverified-leads) and is not asserted anywhere else.
 - Contribute upstream first, and open an issue before starting large work. Upstream maintainers often have views on structure and style.
-- Licensing matters for this plan, which requires CC0, CC-BY, MIT or Apache 2.0 outputs. Licence conflicts are flagged per entry.
+- Licensing matters for this plan, which requires open outputs: permissive (CC0, CC-BY, MIT, Apache 2.0) or copyleft (GPL, AGPL, CC BY-SA). Non-commercial and no-derivatives licences are not open; such conflicts are flagged per entry.
 
 ## Summary
 
@@ -294,6 +294,6 @@ These came up while researching but were **not** confirmed against a primary sou
 
 - **Main plan baseline:** the plan now describes spaCy's `sq` skeleton and NLTK's Albanian stop-word list accurately. Its Common Voice figures (9.2 h, 145 speakers) are older than release 27.0 (9.26 h, 155 speakers).
 - **Status of this list:** the `sq` status of every entry was re-checked against its primary source on 2026-10-05.
-- **Licences to watch:** MMS-TTS is CC-BY-NC (item 3); the Hunspell dictionary is GPL-2.0+ (item 6); UD STAF is CC BY-SA 4.0 (item 12); Apertium `apertium-sqi` is GPL-3.0 (item 13). Students should check licences before reusing data or code.
+- **Licences to watch:** MMS-TTS is CC-BY-NC (item 3), the only non-open licence in this list. Copyleft resources are allowed, but derivatives must keep the same licence: the Hunspell dictionary is GPL-2.0+ (item 6), UD STAF is CC BY-SA 4.0 (item 12), Apertium `apertium-sqi` is GPL-3.0 (item 13), and the community Piper voices are AGPL-3.0 (item 2). Students should check licences before reusing data or code.
 - Counts and dates are a snapshot and will drift. Re-check the linked source before citing a figure in a thesis.
 - Corrections welcome via issues and pull requests, as for the rest of this repository.

@@ -32,7 +32,7 @@
 
 **What's the return?** By 2028, Albanian will have foundational digital language capabilities, ensuring our 8 million speakers can participate in the AI-driven economy and digital society.
 
-**Open Licensing:** All outputs produced under this plan will be openly licensed (CC0, CC-BY, MIT, Apache 2.0, or similar) to maximize accessibility and reuse by the global Albanian-speaking community. This ensures that taxpayer-funded resources benefit everyone—researchers, students, businesses, and individuals—without restrictions.
+**Open Licensing:** All outputs produced under this plan will be openly licensed under permissive licences (CC0, CC-BY, MIT, Apache 2.0) or copyleft licences (GPL, LGPL, AGPL, CC BY-SA) to maximize accessibility and reuse by the global Albanian-speaking community. This ensures that taxpayer-funded resources benefit everyone—researchers, students, businesses, and individuals—without restrictions.
 
 ---
 
@@ -1052,10 +1052,11 @@ Comprehensive assessment including:
 **Critical Funding Note:** The budgets listed below represent **indicative total project costs**. Given national budgets (€1,000,000 annually), **securing EU co-funding (IPA III, Horizon Europe, CEF, Digital Europe) is essential for most work packages to proceed at full scale.** Projects with confirmed EU co-funding receive 2x priority in national fund allocation.
 
 **Mandatory Licensing Requirements:** All outputs from funded projects must be released under open licenses:
-- **Code:** MIT or Apache 2.0
-- **Models:** Apache 2.0 or CC-BY 4.0
-- **Data:** CC0 or CC-BY 4.0
-- **Documentation:** CC-BY 4.0
+- **Code:** MIT or Apache 2.0, or copyleft (GPL, LGPL, AGPL)
+- **Models:** Apache 2.0 or CC-BY 4.0, or copyleft (AGPL, CC BY-SA 4.0)
+- **Data:** CC0 or CC-BY 4.0, or CC BY-SA 4.0
+- **Documentation:** CC-BY 4.0 or CC BY-SA 4.0
+- Copyleft licences are accepted, including when extending existing copyleft projects (for example GPL-licensed Hunspell dictionaries or Apertium data). Non-commercial (NC) and no-derivatives (ND) licences are not open and are not accepted.
 
 ### WP1: Albanian Speech Donation Campaign (Mozilla Common Voice Expansion)
 - **Total Budget:** €80,000 | **Duration:** 18 months
@@ -1201,7 +1202,7 @@ For policymakers and non-technical readers, here are quick definitions of the ma
 
 **GPU (Graphics Processing Unit):** Specialized computer processors that dramatically accelerate AI model training.
 
-**Open licensing:** Legal framework that allows others to freely use, modify, and distribute creative works (code, data, models, documentation) with certain conditions like attribution (CC-BY, MIT, Apache 2.0) or no conditions at all (CC0).
+**Open licensing:** Legal framework that allows others to freely use, modify, and distribute creative works (code, data, models, documentation) with certain conditions like attribution (CC-BY, MIT, Apache 2.0), sharing derivatives under the same licence (copyleft: GPL, AGPL, CC BY-SA), or no conditions at all (CC0).
 
 **NLTK (Natural Language Toolkit):** A widely-used Python library for working with human language data, providing tools for tokenization, stemming, tagging, parsing, and more.
 
