@@ -25,7 +25,7 @@ Albanian is spoken by approximately 8 million people but remains severely underr
 
 **Budget:** €6.5–8.2 million over 3 years (Albania and Kosovo governments + EU co-funding via IPA III, Horizon Europe, Digital Europe, CEF)
 
-**All outputs openly licensed** — CC0, CC-BY, MIT, or Apache 2.0.
+**All outputs openly licensed** — permissive (CC0, CC-BY, MIT, Apache 2.0) or copyleft (GPL, AGPL, CC BY-SA).
 
 ## Student projects
 
