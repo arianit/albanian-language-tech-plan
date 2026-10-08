@@ -261,21 +261,4 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 - **Level:** BSc. Needs ethics approval and partnership with a blind-users organization.
 - **Class project:** *Human-computer interaction / accessibility*: students audit Albanian e-government portals themselves with NVDA against WCAG 2.2 and report the problems found. Without outside participants this usually needs no ethics approval, but check local rules.
 
----
-
-## Unverified leads
-
-These came up while researching but were **not** confirmed against a primary source, so treat them as questions to check before choosing one as a project:
-
-- Albanian support and quality in mobile keyboards and predictive text (Gboard, iOS, AnySoftKeyboard).
-- Montreal Forced Aligner Albanian pronunciation dictionary and acoustic model.
-- Kaldi / ESPnet recipes for Albanian.
-- TeX `hyph-utf8` Albanian patterns.
-- Aspell / Enchant / Chrome / Firefox Albanian spell-check dictionaries.
-- Upstream availability of `shkenca.org/k6i`, the Hunspell dictionary's home page.
-- Whether NLTK's Punkt has Albanian.
-- Academic Albanian morphological analyzers and taggers (for example Trommer and Kallulli, LREC 2004) and whether any are openly released; relevant to item 13's claim that none is available.
-- Whether GlotLID or OpenLID distinguish Gheg (`aln`) from Tosk (`als`); relevant to item 14.
-- LibreTranslate Albanian support.
-- CLDR `sq` coverage level.
 
