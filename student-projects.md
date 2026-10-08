@@ -279,10 +279,3 @@ These came up while researching but were **not** confirmed against a primary sou
 - LibreTranslate Albanian support.
 - CLDR `sq` coverage level.
 
-## Notes on this document
-
-- **Correction for the main plan:** the plan (and the repository's `CLAUDE.md`) says Albanian is not supported in spaCy and NLTK. More precisely, spaCy has a blank-language `sq` skeleton with stop words, and NLTK has an Albanian stop-word list; neither has a tokenizer, tagger, parser or stemmer for Albanian. The goals in WP11 stand, but the baseline wording should be updated.
-- **Status of this list:** facts last spot-checked on 2026-10-05 (Snowball, num2words, Epitran, MMS licence, Stanza processors, UD STAF, hyphenation file); the rest are as of the 2026-10-03 snapshot.
-- **Licences to watch:** MMS-TTS is CC-BY-NC (item 3); the Hunspell dictionary is GPL-2.0+ (item 6). Students should check licences before reusing data or code.
-- Counts and dates are a snapshot and will drift. Re-check the linked source before citing a figure in a thesis.
-- Corrections welcome via issues and pull requests, as for the rest of this repository.
