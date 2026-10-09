@@ -12,7 +12,7 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 
 - **Level** is indicative: **BSc** (a few weeks to one semester, narrow scope), **MSc** (one to two semesters, needs evaluation or training), **BSc/MSc** (can be scoped either way).
 - **Class project** is a smaller slice for a team assignment of 2–6 weeks inside a regular course, with the course named. Course names are generic (computer science, linguistics, translation); match them to your own curriculum. See [Class projects by subject](#class-projects-by-subject).
-- **Status** facts were checked against the primary source (repository, package index or API) on the snapshot date above. Anything I could not confirm is listed at the end under [Unverified leads](#unverified-leads) and is not asserted anywhere else.
+- **Status** facts were checked against the primary source (repository, package index or API) on the snapshot date above. Anything that could not be confirmed is marked as such in the entry itself.
 - Contribute upstream first, and open an issue before starting large work. Upstream maintainers often have views on structure and style.
 - Licensing matters for this plan, which requires CC0, CC-BY, MIT or Apache 2.0 outputs. Licence conflicts are flagged per entry.
 
@@ -149,7 +149,7 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 
 - **URL:** [`xkeyboard-config/symbols/al`](https://gitlab.freedesktop.org/xkeyboard-config/xkeyboard-config/-/blob/master/symbols/al)
 - **`sq` status:** Three layouts: `basic` ("Albanian"), `plisi` and `veqilharxhi`.
-- **Project ideas:** survey which layout Kosovo and North Macedonia users actually use on Windows, Linux, Android and iOS; document how to type `ë` and `ç` on each; propose or test an additional layout or a mobile long-press mapping; write a short user guide. Mobile keyboards were not verified here (see [Unverified leads](#unverified-leads)).
+- **Project ideas:** survey which layout Kosovo and North Macedonia users actually use on Windows, Linux, Android and iOS; document how to type `ë` and `ç` on each; propose or test an additional layout or a mobile long-press mapping; write a short user guide. Mobile keyboards were not verified here.
 - **Level:** BSc.
 - **Class project:** *Human-computer interaction*: user survey plus a timed typing test comparing layouts or input methods for `ë` and `ç`.
 
@@ -160,7 +160,7 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 ### 10. spaCy
 
 - **URL:** <https://github.com/explosion/spaCy/tree/master/spacy/lang/sq>
-- **`sq` status:** `spacy/lang/sq` exists with only three files: `__init__.py`, `examples.py` and a 229-line `stop_words.py`. There are **no tokenizer exceptions, punctuation rules, lexical attributes, lemmatizer or trained pipeline.** (The main plan says Albanian is "not supported", which is imprecise: it is a blank-language skeleton. See the note at the end.)
+- **`sq` status:** `spacy/lang/sq` exists with only three files: `__init__.py`, `examples.py` and a 229-line `stop_words.py`. There are **no tokenizer exceptions, punctuation rules, lexical attributes, lemmatizer or trained pipeline.** (The main plan says Albanian is "not supported", which is imprecise: it is a blank-language skeleton.)
 - **Project ideas:** add `tokenizer_exceptions.py` (abbreviations, clitic forms, `m'`, `s'`, `t'`), `punctuation.py` and `lex_attrs.py` (number words such as *një, dy, tre*; `like_num`); add tests; then train a pipeline from the Universal Dependencies treebanks (item 12) and publish `sq_core_news_*`-style packages.
 - **Level:** BSc (tokenizer, attributes, tests) to MSc (full trained pipeline with evaluation). Aligns with plan WP11.
 - **Class project:** *Software engineering* or *Introduction to NLP*: tokenizer exceptions, `lex_attrs.py` and tests submitted as one upstream pull request. Going through the maintainers' review is part of the exercise, but it can take longer than a semester.
