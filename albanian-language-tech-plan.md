@@ -592,10 +592,7 @@ The field has converged on **continual pretraining of existing open models** as 
 **Objective:** Make Albanian a first-class citizen in widely-used open-source NLP frameworks, ensuring Albanian developers can use familiar tools without building from scratch.
 
 **NLTK Extensions:**
-- **Albanian Stemmer**: Develop AlbanianStemmer class for SnowballStemmer, handling Albanian's complex morphology including:
-  - Definite article suffixation
-  - Plural formations
-  - Verbal conjugations
+- **Albanian Stemmer**: Build on the Albanian Snowball stemmer proposed in [pull request 314](https://github.com/snowballstem/snowball/pull/314) rather than writing a new one. Work: support the review and merge upstream, evaluate it for retrieval quality and with native-speaker error analysis (definite article suffixation, plural formations, verbal conjugations), and make sure it reaches NLTK, Lucene/Elasticsearch and other Snowball users once released
 - **Albanian Punkt Tokenizer**: Train sentence segmentation model on Albanian corpus data
 - **Albanian Stopwords**: Curate comprehensive stopword list
 - Implementation: Fork or direct contribution to NLTK repository
@@ -1157,7 +1154,7 @@ Comprehensive assessment including:
 - **Total Budget:** €70,000 | **Duration:** 24 months
 - **Funding Strategy:** Requires Horizon Europe or Digital Europe co-funding; national contribution €30,000-40,000
 - **Deliverables:**
-  - Albanian Stemmer for NLTK SnowballStemmer
+  - Evaluation, upstream merge support and NLTK integration of the Albanian Snowball stemmer (Snowball PR 314)
   - Albanian Punkt sentence tokenizer for NLTK
   - Complete spaCy pipeline (tokenizer, POS tagger, parser, NER, lemmatizer)
   - Documentation and integration tests
