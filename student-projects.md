@@ -30,7 +30,7 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 | 8 | [LanguageTool](#8-languagetool) | Grammar checking | Not supported | MSc |
 | 9 | [xkeyboard-config `al`](#9-linux-keyboard-layouts-xkb-al) | Keyboard input | 3 layouts, no Kosovo/Gheg layout | BSc |
 | 10 | [spaCy](#10-spacy) | NLP library | Skeleton only (stop words) | BSc/MSc |
-| 11 | [NLTK + Snowball](#11-nltk-and-snowball-stemmer) | NLP library / stemming | Stop words only; no stemmer | BSc |
+| 11 | [NLTK + Snowball](#11-nltk-and-snowball-stemmer) | NLP library / stemming | Stop words only; stemmer proposed upstream (PR 314) | BSc |
 | 12 | [Stanza](#12-stanza) | NLP pipeline | Tokenize, POS, lemma, parse; no NER | MSc |
 | 13 | [Morphological analyzer (FST)](#13-albanian-morphological-analyzer-hfst--apertium) | Morphology | No released analyzer found | MSc |
 | 14 | [Language ID (fastText, lingua)](#14-language-identification-fasttext-lingua) | Language ID | Standard Albanian only | BSc |
@@ -168,8 +168,8 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 ### 11. NLTK and Snowball stemmer
 
 - **URL:** <https://www.nltk.org/> · <https://github.com/snowballstem/snowball/tree/master/algorithms>
-- **`sq` status:** The NLTK stopwords corpus has an `albanian` list. The Snowball repository has 38 algorithm files and **none for Albanian**, so no Albanian stemmer exists in Snowball, NLTK, Lucene/Elasticsearch or the many tools that reuse Snowball. I did not check whether NLTK's Punkt sentence tokenizer has Albanian; it is believed not to.
-- **Project ideas:** design and implement an **Albanian Snowball stemmer** (the algorithm is written in the Snowball language and compiles to many programming languages), evaluated for retrieval quality on an Albanian test collection or against a hand-lemmatized sample; or train an Albanian Punkt sentence tokenizer.
+- **`sq` status:** The NLTK stopwords corpus has an `albanian` list. The Snowball repository has 38 algorithm files and **none for Albanian** on the main branch, so no Albanian stemmer is released in Snowball, NLTK, Lucene/Elasticsearch or the many tools that reuse Snowball. [Pull request 314](https://github.com/snowballstem/snowball/pull/314) proposes one (`algorithms/albanian.sbl`, based on edisnord's [albanian-stemmer](https://github.com/edisnord/albanian-stemmer)); I could not confirm its review status. I did not check whether NLTK's Punkt sentence tokenizer has Albanian; it is believed not to.
+- **Project ideas:** review and **evaluate the proposed Albanian Snowball stemmer** (PR 314) for retrieval quality on an Albanian test collection or against a hand-lemmatized sample, with native-speaker error analysis, and feed the results back to the PR; or, if it stalls, design an alternative; or train an Albanian Punkt sentence tokenizer.
 - **Level:** BSc (stop-word audit, Punkt) to MSc (stemmer with retrieval evaluation).
 - **Class project:** *Information retrieval*: a light suffix-stripping stemmer in Python, with search results compared with and without it on a small collection of Albanian documents and queries.
 
