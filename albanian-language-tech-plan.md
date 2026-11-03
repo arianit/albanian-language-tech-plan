@@ -478,6 +478,7 @@ Compile:
 - [Albanian ASR](https://github.com/florijanqosja/Albanian-ASR): Python-based speech-to-text with Docker support
 - GiellaLT Albanian Grammar: Finite state analyzers for morphological analysis
 - Uniparser-Albanian: Rule-based morphological analysis and lemmatization
+- [Snowball](https://github.com/snowballstem/snowball): Stemmer framework and language (compiles to many programming languages) used by NLTK, Lucene and others. It has about 30 languages but no Albanian algorithm yet (checked November 2026), which is the gap the stemmer work in this plan addresses
 
 **Language Models:**
 - **Visar/roberta_oscar_al**: First Albanian RoBERTa attempt (convergence issues)
