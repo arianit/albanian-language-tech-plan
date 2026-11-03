@@ -249,7 +249,12 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 
 - **URLs:** [Wikidata lexemes for Albanian (Q8748)](https://www.wikidata.org/wiki/Wikidata:Lexicographical_data) · [sq.wiktionary.org](https://sq.wiktionary.org/) · [English Wiktionary Albanian lemmas](https://en.wiktionary.org/wiki/Category:Albanian_lemmas)
 - **`sq` status (counts on 2026-10-03):** 5,318 Albanian lexical entries in Wikidata; 13,776 pages in English Wiktionary's *Albanian lemmas* category; Albanian Wiktionary has 10,244 articles, 10 active users and 1 administrator. For scale, Albanian Wikipedia has 106,389 articles.
-- **Project ideas:** write a Pywikibot or QuickStatements pipeline that adds lexemes **with forms and senses** from an openly licensed source; add audio pronunciations (recordings under CC0/CC BY-SA) to Wiktionary; build a coverage dashboard. This feeds spell checking (item 6), morphology (item 13) and MT.
+- **Project ideas:**
+  1. **Lexeme enrichment:** write a Pywikibot or QuickStatements pipeline that adds lexemes **with forms and senses** from an openly licensed source, and completes existing lexemes that lack forms (for example the inflected forms of nouns and verbs) or senses.
+  2. **Pronunciation recordings:** organise recording sessions with native speakers (Tosk and Gheg, noted per recording), for example with [Lingua Libre](https://lingualibre.org/), and link the audio files from Wikidata lexeme forms and from Wiktionary. Recordings on Wikimedia Commons are under open licences (check the licence chosen in the tool; CC0 or CC BY-SA). The same word list with IPA can serve as the gold test set in item 1.
+  3. **Coverage dashboard:** how many lexemes have forms, senses, audio.
+
+  This feeds spell checking (item 6), morphology (item 13), TTS (items 1 to 3) and MT.
 - **Level:** BSc.
 - **Class project:** *Databases / semantic web*: SPARQL queries and a coverage dashboard (how many lexemes have forms, senses, audio).
 

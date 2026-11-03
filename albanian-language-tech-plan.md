@@ -350,6 +350,10 @@ Launched February 2025 with €37.4M from the Digital Europe Programme (€20.6M
 - Albanian ASR Dataset (Kaggle): 18 hours (automatically labeled)
 - CASR corpus: 20 hours audiobook recordings (not publicly available yet)
 
+**Lexical Resources:**
+- [Wikidata lexemes](https://www.wikidata.org/wiki/Wikidata:Lexicographical_data): 5,318 Albanian lexical entries (October 2026), many without forms, senses or audio pronunciations. CC0, so suitable as an enrichment target (see [Student Projects](student-projects.md), item 20)
+- [Albanian Wiktionary](https://sq.wiktionary.org/): about 10,000 articles
+
 **Parallel Corpora:**
 - OPUS collection: Limited Albanian-English pairs
 - Helsinki-NLP translation model available
