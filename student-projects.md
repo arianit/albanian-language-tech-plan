@@ -28,7 +28,7 @@ Each entry names an existing, widely used open-source tool or dataset, links to 
 | 6 | [Hunspell `sq_AL`](#6-hunspell-sq_al-spell-checker) | Spell checking | 2011 dictionary, no `sq_XK` | BSc/MSc |
 | 7 | [Hyphenation `hyph_sq_AL`](#7-libreoffice-hyphenation-hyph_sq_al) | Typesetting | Semi-automatic 2021 patterns | BSc |
 | 8 | [LanguageTool](#8-languagetool) | Grammar checking | Not supported | MSc |
-| 9 | [xkeyboard-config `al`](#9-linux-keyboard-layouts-xkb-al) | Keyboard input | 3 layouts, no Kosovo/Gheg layout | BSc |
+| 9 | [xkeyboard-config `al`](#9-linux-keyboard-layouts-xkb-al) | Keyboard input | 3 layouts (`basic`, `plisi`, `veqilharxhi`) | BSc |
 | 10 | [spaCy](#10-spacy) | NLP library | Skeleton only (stop words) | BSc/MSc |
 | 11 | [NLTK + Snowball](#11-nltk-and-snowball-stemmer) | NLP library / stemming | Stop words only; stemmer proposed upstream (PR 314) | BSc |
 | 12 | [Stanza](#12-stanza) | NLP pipeline | Tokenize, POS, lemma, parse; no NER | MSc |
